@@ -1,17 +1,86 @@
-# finalexam
+#ITE Store
 
-A new Flutter project.
+A Flutter-based e-commerce mobile application developed as a final examination project. This project demonstrates the use of Flutter Flavors and environment-based configuration to support multiple deployment environments from a single codebase.
 
-## Getting Started
+⸻
 
-This project is a starting point for a Flutter application.
+##Overview
 
-A few resources to get you started if this is your first Flutter project:
+ITE Store is a simple shopping application that retrieves products from different backend APIs depending on the selected build flavor.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+The application was designed to demonstrate:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* Flutter Flavors
+* Environment configuration
+* REST API integration
+* Clean project structure
+* Shopping cart functionality
+
+The application contains two primary screens:
+
+* Home Screen
+* Cart Screen
+
+##Features
+
+* Browse products from a REST API
+* Add and remove items from the shopping cart
+* Calculate total cart price
+* Multiple build environments
+* Environment-specific API configuration
+* Demo mode with cart functionality disabled
+
+##Build Flavors
+
+Flavor	Description
+Development (dev)	Connects to the development API
+User Acceptance Testing (uat)	Connects to the UAT API
+Production (prod)	Connects to the production API
+Demo (demo)	Browse products only (shopping cart disabled)
+
+##Technologies Used
+
+###Frontend
+
+* Flutter
+* Dart
+* Flutter Flavors
+* Environment Configuration
+* REST API Integration
+* Material Design
+
+###Backend
+
+* AWS-hosted REST API
+
+⸻
+
+##Project Structure
+
+lib/
+├── api/
+│   ├── model/
+│   └── cart_manager.dart
+├── app/
+│   ├── app.dart
+│   └── config.dart
+├── screen/
+│   ├── homeScreen.dart
+│   └── cartScreen.dart
+└── main.dart
+
+##Getting Started
+
+1. Clone the repository.
+
+```git clone https://github.com/Lykimheng/ITE-Store-Flutter.git```
+
+2. Install dependencies.
+
+```flutter pub get```
+
+3. Run the desired flavor.
+
+Example:
+
+```flutter run --flavor dev```
