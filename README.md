@@ -56,7 +56,7 @@ Demo (demo)	Browse products only (shopping cart disabled)
 ⸻
 
 ## Project Structure
-
+```
 lib/
 ├── api/
 │   ├── model/
@@ -68,7 +68,7 @@ lib/
 │   ├── homeScreen.dart
 │   └── cartScreen.dart
 └── main.dart
-
+```
 ## Getting Started
 
 1. Clone the repository.
