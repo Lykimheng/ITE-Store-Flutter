@@ -1,0 +1,4 @@
+#include "Generated.xcconfig"
+#include "Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"
+CODE_SIGNING_ALLOWED = NO
+CODE_SIGNING_REQUIRED = NO
