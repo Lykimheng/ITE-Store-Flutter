@@ -73,7 +73,7 @@ lib/
 
 1. Clone the repository.
 
-```git clone https://github.com/Lykimheng/ITE-Store-Flutter.git```
+```git clone https://github.com/Lykimheng/ITE-Store.git```
 
 2. Install dependencies.
 
