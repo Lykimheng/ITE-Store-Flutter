@@ -109,7 +109,7 @@ class _CartScreenState extends State<CartScreen>
         color: Theme.of(context).colorScheme.surface,
         boxShadow: [
           BoxShadow(
-            color: Colors.black,
+            color: Colors.black.withValues(alpha: 0.1),
             blurRadius: 10,
             offset: const Offset(0, -4),
           ),
@@ -258,7 +258,7 @@ class _QtyButton extends StatelessWidget {
         height: 28,
         decoration: BoxDecoration(
           border: Border.all(
-              color: Theme.of(context).colorScheme.outline.withOpacity(0.4)),
+              color: Theme.of(context).colorScheme.outline.withValues(alpha: 0.4)),
           borderRadius: BorderRadius.circular(6),
         ),
         child: Icon(icon, size: 16),
@@ -292,7 +292,7 @@ class _CheckoutSuccessDialog extends StatelessWidget {
                 shape: BoxShape.circle,
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.green.withOpacity(0.3),
+                    color: Colors.green.withValues(alpha: 0.3),
                     blurRadius: 20,
                     spreadRadius: 4,
                   ),

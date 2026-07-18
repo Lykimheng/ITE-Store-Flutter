@@ -65,8 +65,8 @@ lib/
 │   ├── app.dart
 │   └── config.dart
 ├── screen/
-│   ├── homeScreen.dart
-│   └── cartScreen.dart
+│   ├── home_screen.dart
+│   └── cart_screen.dart
 └── main.dart
 ```
 ## Getting Started
@@ -84,3 +84,7 @@ lib/
 Example:
 
 ```flutter run --flavor dev```
+
+## Testing
+
+```flutter test```

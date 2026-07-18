@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 import '../api/model/product.dart';
 import '../api/cart_manager.dart';
 import '../app/config.dart';
-import 'cartScreen.dart';
+import 'cart_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -38,13 +38,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<void> _loadProducts() async {
     try {
-      final apiUrl = Config().apiBaseUrl + 'products.json';
-      print('API URL: $apiUrl');
-      final response = await http.get(
-        Uri.parse(
-          apiUrl,
-        ),
-      );
+      final apiUrl = '${Config().apiBaseUrl}products.json';
+      final response = await http.get(Uri.parse(apiUrl));
       if (response.statusCode == 200) {
         final List<dynamic> jsonList = jsonDecode(response.body);
         final products = jsonList.map((j) => Product.fromJson(j)).toList();
@@ -80,7 +75,6 @@ class _HomeScreenState extends State<HomeScreen> {
     setState(() {
       _cart.addProduct(product);
     });
-    print("Add cart");
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text('${product.name} added to cart'),
